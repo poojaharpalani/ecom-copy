@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import PressCard from "./PressCard";
 import Header from "./Header";

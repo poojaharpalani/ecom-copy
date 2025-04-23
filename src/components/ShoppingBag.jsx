@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const ShoppingBag = ({ isOpen, onClose, items = [], onRemove, onCheckout }) => {

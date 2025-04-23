@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -123,14 +124,14 @@ const AboutPage = () => {
           </p>
           <p>
             For a full list of current stockists, please visit our{" "}
-            <a
+            <Link
               className="underline"
               href="/stockists"
               target="_blank"
               rel="noopener noreferrer"
             >
               stockist page
-            </a>
+            </Link>
             .
           </p>
           <p>

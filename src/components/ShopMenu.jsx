@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 // ShopMenu.jsx
 import { X } from "lucide-react";
 
@@ -27,60 +28,60 @@ export default function ShopMenu({ isOpen, onClose }) {
           <nav className="mt-6">
             <ul className="space-y-6  font-atacama  text-[#34474A]">
               <li>
-                <a
+                <Link
                   href="/earrings"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   EARRINGS
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/necklaces"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   NECKLACES
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   BRACELETS
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   RINGS
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   READY TO SHIP
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   ONE OF A KIND
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/gift-cards"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   GIFT CARDS
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

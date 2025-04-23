@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer
@@ -14,19 +15,19 @@ const Footer = () => {
             <div>
               <ul>
                 <li className="mb-1">
-                  <a href="#" className="hover:text-amber-700">
+                  <Link href="#" className="hover:text-amber-700">
                     Shop
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <a href="#" className="hover:text-amber-700">
+                  <Link href="#" className="hover:text-amber-700">
                     Stockists
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <a href="#" className="hover:text-amber-700">
+                  <Link href="#" className="hover:text-amber-700">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -35,19 +36,19 @@ const Footer = () => {
             <div>
               <ul>
                 <li className="mb-1">
-                  <a href="#" className="hover:text-amber-700">
+                  <Link href="#" className="hover:text-amber-700">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <a href="#" className="hover:text-amber-700">
+                  <Link href="#" className="hover:text-amber-700">
                     Campaigns
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <a href="#" className="hover:text-amber-700">
+                  <Link href="#" className="hover:text-amber-700">
                     Press
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -56,19 +57,19 @@ const Footer = () => {
             <div>
               <ul>
                 <li className="mb-1">
-                  <a href="#" className="hover:text-amber-700">
+                  <Link href="#" className="hover:text-amber-700">
                     Delivery & Returns
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <a href="#" className="hover:text-amber-700">
+                  <Link href="#" className="hover:text-amber-700">
                     Terms & Conditions
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <a href="#" className="hover:text-amber-700">
+                  <Link href="#" className="hover:text-amber-700">
                     Privacy & Cookies
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -90,34 +91,34 @@ const Footer = () => {
           <div className="flex flex-col">
             <ul>
               <li className="mb-2">
-                <a href="#" className="hover:text-amber-700 text-sm">
+                <Link href="#" className="hover:text-amber-700 text-sm">
                   Shop
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:text-amber-700 text-sm">
+                <Link href="#" className="hover:text-amber-700 text-sm">
                   Stockists
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:text-amber-700 text-sm">
+                <Link href="#" className="hover:text-amber-700 text-sm">
                   Contact
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:text-amber-700 text-sm">
+                <Link href="#" className="hover:text-amber-700 text-sm">
                   About
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:text-amber-700 text-sm">
+                <Link href="#" className="hover:text-amber-700 text-sm">
                   Campaigns
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:text-amber-700 text-sm">
+                <Link href="#" className="hover:text-amber-700 text-sm">
                   Press
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -126,19 +127,19 @@ const Footer = () => {
           <div className="flex flex-col">
             <ul>
               <li className="mb-2">
-                <a href="#" className="hover:text-amber-700 text-sm">
+                <Link href="#" className="hover:text-amber-700 text-sm">
                   Delivery & Returns
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:text-amber-700 text-sm">
+                <Link href="#" className="hover:text-amber-700 text-sm">
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:text-amber-700 text-sm">
+                <Link href="#" className="hover:text-amber-700 text-sm">
                   Privacy & Cookies
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

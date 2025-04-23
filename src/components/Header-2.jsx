@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import ShopMenu from "./ShopMenu";
 
@@ -31,18 +32,18 @@ function Header() {
         <div className="max-w-7xl mx-auto flex items-center justify-between h-20 px-4 md:px-8">
           <nav className="flex gap-5 text-xs md:text-sm justify-start font-serif">
             {navLeft.map((link, index) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 className="text-gray-700 hover:text-neutral-900 transition-colors"
                 onClick={(e) => toggleMenu(e, index === 0)}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="flex items-center justify-center">
-            <a href="#" aria-label="Logo" className="inline-block">
+            <Link href="#" aria-label="Logo" className="inline-block">
               {/* Add your logo SVG here */}
               <svg
                 className="w-auto h-[4vw] max-h-[20px] md:max-h-[28px] text-slate"
@@ -51,17 +52,17 @@ function Header() {
               >
                 {/* SVG content */}
               </svg>
-            </a>
+            </Link>
           </div>
           <nav className="flex gap-5 text-xs md:text-sm justify-end font-serif">
             {navRight.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 className="text-gray-700 hover:text-neutral-900 transition-colors"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
           <button
@@ -76,13 +77,13 @@ function Header() {
           <div className="absolute top-20 left-0 w-full bg-white z-40 transition-all">
             {/* Render Mobile Menu Items */}
             {navLeft.concat(navRight).map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 className="block py-2 px-4 text-gray-700 hover:text-neutral-900"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
         )}

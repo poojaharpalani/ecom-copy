@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 // JewelryProductDetail.jsx - Updated with Add to Bag functionality
 import { useState } from "react";
 import ShoppingBag from "../components/ShoppingBag";

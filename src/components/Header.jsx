@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import ShopMenu from "./ShopMenu";
 import ShoppingBag from "./ShoppingBag";
@@ -36,14 +37,14 @@ function Header() {
         <div className="max-w-7xl mx-auto flex items-center justify-between py-6 px-4 md:px-8 w-full">
           <nav className="flex-1 flex gap-5 text-xs md:text-sm justify-start font-serif">
             {navLeft.map((link, index) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 className="text-gray-700 hover:text-neutral-900 transition-colors"
                 onClick={(e) => index === 0 && toggleMenu(e)}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="flex-[0_1_220px] flex items-center justify-center">
@@ -62,22 +63,22 @@ function Header() {
           <nav className="flex-1 flex gap-5 text-xs md:text-sm justify-end font-serif">
             {navRight.map((link) =>
               link.id === "bag" ? (
-                <a
+                <Link
                   key={link.id}
                   href={link.href}
                   className="text-gray-700 hover:text-neutral-900 transition-colors"
                   onClick={(event) => toggleBagMenu(event)}
                 >
                   {`${link.name} (${bagCount})`}
-                </a>
+                </Link>
               ) : (
-                <a
+                <Link
                   key={link.name}
                   href={link.href}
                   className="text-gray-700 hover:text-neutral-900 transition-colors"
                 >
                   {link.name}
-                </a>
+                </Link>
               )
             )}
           </nav>
@@ -114,7 +115,7 @@ function Header() {
           <button className="text-sm font-medium">MENU</button>
 
           <div className="flex-[0_1_220px] flex items-center bg-transparent justify-center">
-            <a href="#" className="inline-block">
+            <Link href="#" className="inline-block">
               {/* Add your logo SVG or any other logo */}
               <svg
                 class="w-auto h-[4vw] max-h-[20px] md:max-h-[28px] text-slate"
@@ -128,13 +129,13 @@ function Header() {
                 ></path>
               </svg>
               {/* SVG content */}
-            </a>
+            </Link>
           </div>
 
           <div className="text-sm font-medium">
-            <a href="" onClick={(event) => toggleBagMenu(event)}>
+            <Link href="" onClick={(event) => toggleBagMenu(event)}>
               BAG (0)
-            </a>
+            </Link>
           </div>
           {isMenuOpen}
           {isBagMenuOpen && (
@@ -160,14 +161,14 @@ function Header() {
         <div className="max-w-4xl mx-auto flex items-center justify-between py-6 px-4 w-full">
           <nav className="flex gap-4 text-xs justify-start font-serif">
             {navLeft.map((link, index) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 className="text-gray-700 hover:text-neutral-900 transition-colors"
                 onClick={(e) => (index === 0 ? toggleMenu(e) : null)}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
           <div>
@@ -186,7 +187,7 @@ function Header() {
 
           <nav className="flex gap-4 text-xs justify-end font-serif">
             {navRight.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 className="text-gray-700 hover:text-neutral-900 transition-colors"
@@ -195,7 +196,7 @@ function Header() {
                 }
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>
