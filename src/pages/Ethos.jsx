@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import React from "react";
 import ImageCarousel from "../components/ImageCarousel";
 import Footer from "../components/Footer";
@@ -37,7 +37,7 @@ const Ethos = () => {
           </h1>
         </header>
 
-        <Linkrticle className="space-y-6 text-sm md:text-base text-[#34474A] text-left md:text-center max-w-2xl mx-auto">
+        <article className="space-y-6 text-sm md:text-base text-[#34474A] text-left md:text-center max-w-2xl mx-auto">
           <p className="font-helvetica w-full md:max-w-xl mx-auto">
             Grainne Morton is a small business working with around ten talented
             and highly valued individuals. Our core creative and business
@@ -94,7 +94,7 @@ const Ethos = () => {
 
       {/* Subsections */}
       <section className="w-full md:w-[86vw] max-w-sm mx-auto space-y-16 text-center sm:text-left px-8 md:px-0">
-        <Linkrticle>
+        <article>
           <h2 className="font-atacama text-[#34474A] uppercase text-[30px] mobile:text-[20px] mb-3">
             Made by hand
           </h2>
@@ -106,7 +106,7 @@ const Ethos = () => {
           </p>
         </article>
 
-        <Linkrticle>
+        <article>
           <h2 className="font-atacama text-[#34474A] uppercase text-[30px] mobile:text-[20px] mb-6">
             Made using recycled and fairly acquired materials
           </h2>
@@ -118,7 +118,7 @@ const Ethos = () => {
           </p>
         </article>
 
-        <Linkrticle>
+        <article>
           <h2 className="font-atacama text-[#34474A] uppercase text-[30px] mobile:text-[20px] mb-6">
             Made to order
           </h2>
