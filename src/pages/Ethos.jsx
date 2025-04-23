@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import React from "react";
 import ImageCarousel from "../components/ImageCarousel";
 import Footer from "../components/Footer";

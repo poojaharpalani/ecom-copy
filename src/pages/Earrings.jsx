@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 // EarringsShop.jsx
 import { useState, useEffect } from "react";
 import "./Earrings.css";

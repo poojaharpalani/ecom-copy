@@ -1,13 +1,9 @@
-import { Link } from 'react-router-dom';
+
 import React, { useState } from "react";
 import Header from "../components/Header";
 import HeroImage from "../components/HeroImage";
 import ImageCollage from "../components/ImageCollage";
-import SectionTitle from "../components/SectionTitle";
-import ProductGrid from "../components/ProductGrid";
-import EditorialBlock from "../components/EditorialBlock";
-import LifestyleSection from "../components/lifestyleSection";
-import MotifGraphic from "../components/MotifGraphic";
+
 import Footer from "../components/Footer";
 import SplashScreen from "../components/SplashScreen";
 import { useEffect } from "react";
