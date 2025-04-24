@@ -69,29 +69,29 @@ function SplashScreen() {
       {/* Top navigation */}
       <nav className="absolute left-0 top-0 w-full h-20 flex items-center justify-between px-10 pt-8 text-xs   md:text-sm  hover:bg-white">
         <div className="flex gap-8 text-[#34474A]">
-          <Link href="#" className="hover:text-white cursor-pointer">
+          <Link to="#" className="hover:text-white cursor-pointer">
             SHOP
           </Link>
-          <Link href="#" className="hover:text-white cursor-pointer">
+          <Link to="#" className="hover:text-white cursor-pointer">
             CAMPAIGNS
           </Link>
-          <Link href="#" className="hover:text-white cursor-pointer">
+          <Link to="#" className="hover:text-white cursor-pointer">
             STOCKISTS
           </Link>
         </div>
 
         <div className="flex gap-8 text-[#34474A]">
-          <Link href="/ethos" className="hover:text-white cursor-pointer">
+          <Link to="/ethos" className="hover:text-white cursor-pointer">
             ETHOS
           </Link>
 
-          <Link href="/press" className="hover:text-white cursor-pointer">
+          <Link to="/press" className="hover:text-white cursor-pointer">
             PRESS
           </Link>
-          <Link href="/about" className="hover:text-white cursor-pointer">
+          <Link to="/about" className="hover:text-white cursor-pointer">
             ABOUT
           </Link>
-          <Link href="#" className="hover:text-white cursor-pointer">
+          <Link to="#" className="hover:text-white cursor-pointer">
             BAG (0)
           </Link>
         </div>

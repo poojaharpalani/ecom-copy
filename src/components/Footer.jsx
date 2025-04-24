@@ -15,17 +15,17 @@ const Footer = () => {
             <div>
               <ul>
                 <li className="mb-1">
-                  <Link href="#" className="hover:text-amber-700">
+                  <Link to="#" className="hover:text-amber-700">
                     Shop
                   </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#" className="hover:text-amber-700">
+                  <Link to="#" className="hover:text-amber-700">
                     Stockists
                   </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#" className="hover:text-amber-700">
+                  <Link to="#" className="hover:text-amber-700">
                     Contact
                   </Link>
                 </li>
@@ -36,17 +36,17 @@ const Footer = () => {
             <div>
               <ul>
                 <li className="mb-1">
-                  <Link href="#" className="hover:text-amber-700">
+                  <Link to="#" className="hover:text-amber-700">
                     About
                   </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#" className="hover:text-amber-700">
+                  <Link to="#" className="hover:text-amber-700">
                     Campaigns
                   </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#" className="hover:text-amber-700">
+                  <Link to="#" className="hover:text-amber-700">
                     Press
                   </Link>
                 </li>
@@ -57,17 +57,17 @@ const Footer = () => {
             <div>
               <ul>
                 <li className="mb-1">
-                  <Link href="#" className="hover:text-amber-700">
+                  <Link to="#" className="hover:text-amber-700">
                     Delivery & Returns
                   </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#" className="hover:text-amber-700">
+                  <Link to="#" className="hover:text-amber-700">
                     Terms & Conditions
                   </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#" className="hover:text-amber-700">
+                  <Link to="#" className="hover:text-amber-700">
                     Privacy & Cookies
                   </Link>
                 </li>
@@ -91,32 +91,32 @@ const Footer = () => {
           <div className="flex flex-col">
             <ul>
               <li className="mb-2">
-                <Link href="#" className="hover:text-amber-700 text-sm">
+                <Link to="#" className="hover:text-amber-700 text-sm">
                   Shop
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="#" className="hover:text-amber-700 text-sm">
+                <Link to="#" className="hover:text-amber-700 text-sm">
                   Stockists
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="#" className="hover:text-amber-700 text-sm">
+                <Link to="#" className="hover:text-amber-700 text-sm">
                   Contact
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="#" className="hover:text-amber-700 text-sm">
+                <Link to="#" className="hover:text-amber-700 text-sm">
                   About
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="#" className="hover:text-amber-700 text-sm">
+                <Link to="#" className="hover:text-amber-700 text-sm">
                   Campaigns
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="#" className="hover:text-amber-700 text-sm">
+                <Link to="#" className="hover:text-amber-700 text-sm">
                   Press
                 </Link>
               </li>
@@ -127,17 +127,17 @@ const Footer = () => {
           <div className="flex flex-col">
             <ul>
               <li className="mb-2">
-                <Link href="#" className="hover:text-amber-700 text-sm">
+                <Link to="#" className="hover:text-amber-700 text-sm">
                   Delivery & Returns
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="#" className="hover:text-amber-700 text-sm">
+                <Link to="#" className="hover:text-amber-700 text-sm">
                   Terms & Conditions
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="#" className="hover:text-amber-700 text-sm">
+                <Link to="#" className="hover:text-amber-700 text-sm">
                   Privacy & Cookies
                 </Link>
               </li>

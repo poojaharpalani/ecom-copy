@@ -6,7 +6,7 @@ import "react-lazy-load-image-component/src/effects/blur.css"; // Optional CSS f
 function PressCard({ href, imgSrc, alt }) {
   return (
     <Link
-      href={href}
+      to={href}
       className="block overflow-hidden rounded-md shadow-md hover:shadow-lg transition ring-1 ring-gray-200 hover:scale-105 duration-200 bg-white"
       target="_blank"
       rel="noopener noreferrer"

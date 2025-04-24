@@ -34,7 +34,7 @@ function Header() {
             {navLeft.map((link, index) => (
               <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="text-gray-700 hover:text-neutral-900 transition-colors"
                 onClick={(e) => toggleMenu(e, index === 0)}
               >
@@ -43,7 +43,7 @@ function Header() {
             ))}
           </nav>
           <div className="flex items-center justify-center">
-            <Link href="#" aria-label="Logo" className="inline-block">
+            <Link to="#" aria-label="Logo" className="inline-block">
               {/* Add your logo SVG here */}
               <svg
                 className="w-auto h-[4vw] max-h-[20px] md:max-h-[28px] text-slate"
@@ -58,7 +58,7 @@ function Header() {
             {navRight.map((link) => (
               <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="text-gray-700 hover:text-neutral-900 transition-colors"
               >
                 {link.name}
@@ -79,7 +79,7 @@ function Header() {
             {navLeft.concat(navRight).map((link) => (
               <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="block py-2 px-4 text-gray-700 hover:text-neutral-900"
               >
                 {link.name}

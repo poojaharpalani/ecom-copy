@@ -65,7 +65,7 @@ function Header() {
               link.id === "bag" ? (
                 <Link
                   key={link.id}
-                  href={link.href}
+                  to={link.href}
                   className="text-gray-700 hover:text-neutral-900 transition-colors"
                   onClick={(event) => toggleBagMenu(event)}
                 >
@@ -74,7 +74,7 @@ function Header() {
               ) : (
                 <Link
                   key={link.name}
-                  href={link.href}
+                  to={link.href}
                   className="text-gray-700 hover:text-neutral-900 transition-colors"
                 >
                   {link.name}
@@ -115,7 +115,7 @@ function Header() {
           <button className="text-sm font-medium">MENU</button>
 
           <div className="flex-[0_1_220px] flex items-center bg-transparent justify-center">
-            <Link href="#" className="inline-block">
+            <Link to="/" className="inline-block">
               {/* Add your logo SVG or any other logo */}
               <svg
                 class="w-auto h-[4vw] max-h-[20px] md:max-h-[28px] text-slate"
@@ -133,7 +133,7 @@ function Header() {
           </div>
 
           <div className="text-sm font-medium">
-            <Link href="" onClick={(event) => toggleBagMenu(event)}>
+            <Link to="" onClick={(event) => toggleBagMenu(event)}>
               BAG {`(${bagCount})`}
             </Link>
           </div>
@@ -163,7 +163,7 @@ function Header() {
             {navLeft.map((link, index) => (
               <Link
                 key={`{link.name}-${index}`}
-                href={link.href}
+                to={link.href}
                 className="text-gray-700 hover:text-neutral-900 transition-colors"
                 onClick={(e) => (index === 0 ? toggleMenu(e) : null)}
               >
@@ -190,7 +190,7 @@ function Header() {
               link.id === "bag" ? (
                 <Link
                   key={link.id}
-                  href={link.href}
+                  to={link.href}
                   className="text-gray-700 hover:text-neutral-900 transition-colors"
                   onClick={(event) => toggleBagMenu(event)}
                 >
@@ -199,7 +199,7 @@ function Header() {
               ) : (
                 <Link
                   key={link.name}
-                  href={link.href}
+                  to={link.href}
                   className="text-gray-700 hover:text-neutral-900 transition-colors"
                 >
                   {link.name}

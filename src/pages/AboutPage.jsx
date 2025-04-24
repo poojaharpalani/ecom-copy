@@ -126,7 +126,7 @@ const AboutPage = () => {
             For a full list of current stockists, please visit our{" "}
             <Link
               className="underline"
-              href="/stockists"
+              to="/stockists"
               target="_blank"
               rel="noopener noreferrer"
             >

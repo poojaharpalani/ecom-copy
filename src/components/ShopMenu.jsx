@@ -29,7 +29,7 @@ export default function ShopMenu({ isOpen, onClose }) {
             <ul className="space-y-6  font-atacama  text-[#34474A]">
               <li>
                 <Link
-                  href="/earrings"
+                  to="/earrings"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   EARRINGS
@@ -37,7 +37,7 @@ export default function ShopMenu({ isOpen, onClose }) {
               </li>
               <li>
                 <Link
-                  href="/necklaces"
+                  to="/necklaces"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   NECKLACES
@@ -45,7 +45,7 @@ export default function ShopMenu({ isOpen, onClose }) {
               </li>
               <li>
                 <Link
-                  href="#"
+                  to="#"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   BRACELETS
@@ -53,7 +53,7 @@ export default function ShopMenu({ isOpen, onClose }) {
               </li>
               <li>
                 <Link
-                  href="#"
+                  to="#"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   RINGS
@@ -61,7 +61,7 @@ export default function ShopMenu({ isOpen, onClose }) {
               </li>
               <li>
                 <Link
-                  href="#"
+                  to="#"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   READY TO SHIP
@@ -69,7 +69,7 @@ export default function ShopMenu({ isOpen, onClose }) {
               </li>
               <li>
                 <Link
-                  href="#"
+                  to="#"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   ONE OF A KIND
@@ -77,7 +77,7 @@ export default function ShopMenu({ isOpen, onClose }) {
               </li>
               <li>
                 <Link
-                  href="/gift-cards"
+                  to="/gift-cards"
                   className="block py-2 text-2xl hover:text-gray-900 transition border-b border-transparent hover:border-gray-200"
                 >
                   GIFT CARDS

@@ -38,7 +38,7 @@ function PressGrid() {
           {pressImages.slice(0, visibleCount).map((src, idx) => (
             <div key={src + idx} className="mb-8 break-inside-avoid">
               <PressCard
-                href="#"
+                to="#"
                 imgSrc={src}
                 alt={`Press Feature ${idx + 1}`}
                 loading="lazy" // Lazy loading for improved performance
