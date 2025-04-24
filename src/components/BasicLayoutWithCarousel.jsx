@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 
 export default function BasicLayoutWithCarousel() {
@@ -21,7 +20,7 @@ export default function BasicLayoutWithCarousel() {
     }, 2500); // Change image every 2.5 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  });
 
   return (
     <div className="flex flex-col md:flex-row w-full my-4 ">
@@ -36,7 +35,7 @@ export default function BasicLayoutWithCarousel() {
           >
             <img
               src={src}
-              alt={`Carousel image ${index + 1}`}
+              alt={`Carousel  ${index + 1}`}
               className="w-full h-full object-cover"
             />
           </div>

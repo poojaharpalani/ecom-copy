@@ -1,4 +1,3 @@
-
 import React from "react";
 import ImageCarousel from "../components/ImageCarousel";
 import Footer from "../components/Footer";
@@ -19,7 +18,7 @@ const Ethos = () => {
         {/* Image visible only on sm */}
         <img
           src="/ethos-sm.webp"
-          alt="Alternate image for small screens"
+          alt="Alternate  for small screens"
           className="block md:hidden w-full h-screen object-cover"
         />
       </div>

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import ShopMenu from "./ShopMenu";
 import ShoppingBag from "./ShoppingBag";
@@ -19,7 +19,7 @@ const navRight = [
 function Header() {
   const [isBagMenuOpen, setBagMenuOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [bagCount, setBagCount] = useState(0);
+  const [bagCount] = useState(0);
 
   const toggleBagMenu = (event) => {
     event.preventDefault();
@@ -39,7 +39,7 @@ function Header() {
             {navLeft.map((link, index) => (
               <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="text-gray-700 hover:text-neutral-900 transition-colors"
                 onClick={(e) => index === 0 && toggleMenu(e)}
               >
@@ -134,7 +134,7 @@ function Header() {
 
           <div className="text-sm font-medium">
             <Link href="" onClick={(event) => toggleBagMenu(event)}>
-              BAG (0)
+              BAG {`(${bagCount})`}
             </Link>
           </div>
           {isMenuOpen}
@@ -162,7 +162,7 @@ function Header() {
           <nav className="flex gap-4 text-xs justify-start font-serif">
             {navLeft.map((link, index) => (
               <Link
-                key={link.name}
+                key={`{link.name}-${index}`}
                 href={link.href}
                 className="text-gray-700 hover:text-neutral-900 transition-colors"
                 onClick={(e) => (index === 0 ? toggleMenu(e) : null)}
@@ -186,18 +186,26 @@ function Header() {
           </div>
 
           <nav className="flex gap-4 text-xs justify-end font-serif">
-            {navRight.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-gray-700 hover:text-neutral-900 transition-colors"
-                onClick={(e) =>
-                  link.name === "Bag (0)" ? toggleBagMenu(e) : null
-                }
-              >
-                {link.name}
-              </Link>
-            ))}
+            {navRight.map((link) =>
+              link.id === "bag" ? (
+                <Link
+                  key={link.id}
+                  href={link.href}
+                  className="text-gray-700 hover:text-neutral-900 transition-colors"
+                  onClick={(event) => toggleBagMenu(event)}
+                >
+                  {`${link.name} (${bagCount})`}
+                </Link>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="text-gray-700 hover:text-neutral-900 transition-colors"
+                >
+                  {link.name}
+                </Link>
+              )
+            )}
           </nav>
         </div>
         {isMenuOpen}
